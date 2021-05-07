@@ -47,7 +47,7 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(dd2,aes(x=RACE,y=prcnt*100,fill=OWNGUN)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
-
+The graph shows that among the races the black race is less likely to own a gun.
 
 
 ### Numerical Descriptive Results
@@ -59,6 +59,7 @@ table1 <- xtabs(~RACE + OWNGUN, data=GSS)
 rowPerc(table1)
 colPerc(table1)
 ```
+The nemerical sumeriries shows that the white race is more likely to own a gun.
 
 ## Inferential Results
 
